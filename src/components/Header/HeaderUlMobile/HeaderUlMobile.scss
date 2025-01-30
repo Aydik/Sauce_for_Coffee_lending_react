@@ -1,0 +1,19 @@
+.header_ul-container {
+  border-top: var(--default-border);
+  overflow: hidden;
+
+  .header_ul {
+    position: relative;
+    width: 100%;
+    background: var(--default-background);
+    border-bottom: var(--default-border);
+    margin: 0;
+    padding: 16px 3.865% 0;
+    line-height: 1.54em;
+    transform: translateY(-100%);
+
+    li {
+      margin-bottom: 16px;
+    }
+  }
+}

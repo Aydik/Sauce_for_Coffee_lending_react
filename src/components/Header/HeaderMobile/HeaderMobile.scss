@@ -1,0 +1,66 @@
+@use "../Header";
+
+.header-mobile {
+  .header_nav {
+    position: relative;
+    background: var(--default-background);
+    padding: 18px 3.865%;
+    justify-content: space-between;
+
+    .button {
+      box-sizing: border-box;
+      width: 44px;
+      height: 44px;
+      padding: 12px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .logo{
+      height: 44px;
+    }
+
+    #menu-toggle {
+      display: none;
+      &:checked {
+        & + .button-menu {
+          img {
+            content: url("@/assets/images/vector/close.svg");
+          }
+        }
+        & ~ .header_ul-container {
+          .header_ul {
+            animation-name: slideIn;
+            animation-duration: 0.25s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+    }
+  }
+  .header_ul-container {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 960px) {
+  .header-mobile {
+    display: none;
+  }
+}

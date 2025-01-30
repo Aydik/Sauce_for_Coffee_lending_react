@@ -1,27 +1,13 @@
-import {useEffect, useState} from "react";
+import * as React from "react";
 
-export type LogoProps = {
-    isShowLogo: boolean;
+interface LogoProps {
+    logoSrc: string;
 }
 
-export const Logo = ({ isShowLogo }: LogoProps) => {
-    const [value, setValue] = useState(false);
-
-    useEffect(() => {
-        console.log('Я вызвался', value);
-
-        return () => {
-            console.log('Я уничтожился', value, isShowLogo);
-        };
-    }, [value, isShowLogo]);
-
-    const toggleValue = () => {
-        setValue(!value)
-    };
-
+export const Logo: React.FC<LogoProps> = ({logoSrc}: LogoProps) => {
     return (
-        <button type='button' onClick={toggleValue}>
-            { value ? 'крутой логотип' : 'обычный логотип' }
-        </button>
+        <a className="logo" href="#">
+            <img src={logoSrc} alt="home"/>
+        </a>
     )
 }

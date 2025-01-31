@@ -1,0 +1,26 @@
+.marque {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  overflow: hidden;
+
+  &_content {
+    display: inline-block;
+    white-space: nowrap;
+
+    .item-collection {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      animation: marquee 8s linear infinite;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-33.3333333%)
+  }
+}

@@ -1,0 +1,10 @@
+.section-catalog {
+  padding: 28px 20px;
+  position: relative;
+  overflow: hidden;
+
+  &_content {
+    min-width: 974px;
+    position: relative;
+  }
+}

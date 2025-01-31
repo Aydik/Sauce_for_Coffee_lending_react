@@ -1,0 +1,22 @@
+.foreign-text {
+  padding: var(--default-padding);
+  position: relative;
+  z-index: 0;
+
+  .ujjo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: contain;
+  }
+
+  .white-label {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: calc((100% - 2 * var(--default-padding)) * 0.8491);
+  }
+}

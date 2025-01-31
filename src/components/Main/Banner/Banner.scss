@@ -1,0 +1,15 @@
+.banner {
+  position: relative;
+  box-sizing: border-box;
+  padding: var(--default-padding);
+
+  &_picture {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

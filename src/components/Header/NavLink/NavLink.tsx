@@ -1,7 +1,7 @@
 import './NavLink.scss'
 import * as React from "react";
 
-interface NavLinkProps {
+export interface NavLinkProps {
     title: string;
     href: string;
 }

@@ -1,0 +1,16 @@
+.marque-element{
+  &_text {
+    display: inline-block;
+    font-size: var(--running-line-text-size);
+    margin-right: 29px;
+    white-space: nowrap;
+  }
+
+  &_img {
+    display: inline-block;
+    width: 64.18px;
+    height: 30.13px;
+    object-fit: contain;
+    margin-right: 29px;
+  }
+}

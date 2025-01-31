@@ -1,6 +1,6 @@
 import * as React from "react";
 
-interface LogoProps {
+export interface LogoProps {
     logoSrc: string;
 }
 

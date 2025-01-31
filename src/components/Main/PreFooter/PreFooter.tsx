@@ -10,7 +10,7 @@ export const PreFooter: React.FC = () => {
             <div className="pre-footer_content bordered">
                 <img className="background"
                      src="/assets/images/vector/big_fire.svg" alt=""/>
-                <img className="frame dark-svg-white"
+                <img className="frame svg-dark"
                      src="/assets/images/vector/bottom_frame.svg" alt=""/>
                 <ForeignText/>
             </div>

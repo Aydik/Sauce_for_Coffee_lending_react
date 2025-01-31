@@ -5,7 +5,7 @@ export const MarqueElement: React.FC = () => {
     return (
         <>
             <span className="marque-element_text">put some fire in your belly</span>
-            <img className="marque-element_img"
+            <img className="marque-element_img svg-dark"
                  src="/assets/images/vector/pepper.svg" alt=""/>
         </>
     )

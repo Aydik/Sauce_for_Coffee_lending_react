@@ -49,3 +49,31 @@ body {
 img{
   display: block;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--milk-color);
+  }
+  .product-card p{
+    color: black;
+  }
+  .nav-link-text{
+    color: var(--milk-color);
+  }
+  .svg-dark,
+  .header-mobile .logo img {
+    filter: invert(92%);
+  }
+  .header-desktop .logo img {
+    content: url("@/assets/images/vector/dark/logo_dark.svg");
+  }
+  .ujjo {
+    content: url("@/assets/images/vector/dark/ujjo_dark.svg");
+  }
+  .background-image {
+    content: url("@/assets/images/vector/dark/product_card_background_dark.png");
+  }
+  .background-for-text {
+    content: url("@/assets/images/vector/dark/background_for_text_dark.svg");
+  }
+}

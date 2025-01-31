@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './ProductCard.scss'
 
-interface ProductCardProps {
+export interface ProductCardProps {
     name: string;
     info: string;
     srcSet: {

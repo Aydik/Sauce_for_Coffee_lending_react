@@ -1,7 +1,9 @@
 .banner {
   position: relative;
   box-sizing: border-box;
-  padding: var(--default-padding);
+  &-with-padding {
+    padding: var(--default-padding);
+  }
 
   &_picture {
     width: calc(100% - 40px);

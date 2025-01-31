@@ -1,0 +1,52 @@
+.footer {
+  padding: 20px clamp(12px, calc(40px + 53 * (100vw - 1024px) / 416), 93px);
+  position: relative;
+  font-size: var(--footer-text-size);
+  background: var(--secondary-color);
+
+  &_content {
+    width: 100%;
+    position: relative;
+
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a:hover {
+        cursor: pointer;
+      }
+    }
+
+    .address {
+      text-align: center;
+
+      a:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .footer {
+    &_content {
+      .address {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    border-bottom: 0 !important;
+    .address{
+      margin-top: var(--footer-text-size);
+    }
+  }
+}

@@ -8,12 +8,19 @@ export interface BannerProps {
         small: string;
     }
     alt: string
+    isBordered?: boolean;
+    withPadding?: boolean;
 }
 
-export const Banner: React.FC<BannerProps> = (props: BannerProps) => {
-    const {srcSet, alt} = props;
+export const Banner: React.FC<BannerProps> = (
+    {
+        srcSet,
+        alt,
+        isBordered = false,
+        withPadding = true
+    }: BannerProps) => {
     return (
-        <div className="banner">
+        <div className={`banner${isBordered ? " bordered" : ""}${withPadding ? " banner-with-padding" : ""}`}>
             <picture className="banner_picture">
                 <source media="(min-width: 1440px)"
                         srcSet={srcSet.large}/>

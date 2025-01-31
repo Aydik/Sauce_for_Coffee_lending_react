@@ -3,7 +3,7 @@
   grid-template-columns: 50% 50%;
   box-sizing: content-box;
 
-  .section-banner_component {
+  &_block {
     &:first-child {
       border-right: var(--default-border);
 

@@ -1,7 +1,7 @@
 import './HeaderMobile.scss'
 import * as React from "react";
 import {Logo} from "../Logo/Logo.tsx";
-import {HeaderUlMobile} from "../HeaderUlMobile/HeaderUlMobile.tsx";
+import {HeaderNavListMobile} from "../HeaderNavListMobile/HeaderNavListMobile.tsx";
 
 export const HeaderMobile: React.FC = () => {
     return (
@@ -10,7 +10,7 @@ export const HeaderMobile: React.FC = () => {
                 <input type="checkbox" id="menu-toggle"/>
                 <label htmlFor="menu-toggle" className="button button-primary button-menu">
                     <img className="img" src="/assets/images/vector/menu.svg" alt=""/></label>
-                <HeaderUlMobile/>
+                <HeaderNavListMobile/>
                 <Logo logoSrc={"/assets/images/vector/logo_mobile.svg"}/>
                 <button className="button button-primary button-primary-users">
                     <img src="/assets/images/vector/users.svg" alt=""/>

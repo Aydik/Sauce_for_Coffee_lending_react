@@ -1,10 +1,6 @@
 import './NavLink.scss'
 import * as React from "react";
-
-export interface NavLinkProps {
-    title: string;
-    href: string;
-}
+import {NavLinkProps} from './NavLink.interface.ts';
 
 export const NavLink: React.FC<NavLinkProps> = (props: NavLinkProps) => {
     const {title, href} = props;

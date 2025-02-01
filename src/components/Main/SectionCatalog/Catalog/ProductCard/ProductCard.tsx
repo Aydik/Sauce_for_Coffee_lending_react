@@ -1,14 +1,6 @@
 import * as React from 'react';
 import './ProductCard.scss'
-
-export interface ProductCardProps {
-    name: string;
-    info: string;
-    srcSet: {
-        large: string;
-        medium: string;
-    }
-}
+import {ProductCardProps} from './ProductCard.interface.ts'
 
 export const ProductCard: React.FC<ProductCardProps> = (props: ProductCardProps) => {
     const {name, info, srcSet} = props;

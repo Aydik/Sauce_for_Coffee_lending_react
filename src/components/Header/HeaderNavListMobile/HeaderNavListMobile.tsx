@@ -1,8 +1,8 @@
 import * as React from "react";
-import './HeaderUlMobile.scss'
+import './HeaderNavListMobile.scss'
 import {NavLink} from "../NavLink/NavLink.tsx";
 
-export const HeaderUlMobile: React.FC = () => {
+export const HeaderNavListMobile: React.FC = () => {
     return (
         <div className="header_ul-container">
             <ul className="header_ul">

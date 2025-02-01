@@ -1,8 +1,5 @@
 import * as React from "react";
-
-export interface LogoProps {
-    logoSrc: string;
-}
+import {LogoProps} from './Logo.interface.ts'
 
 export const Logo: React.FC<LogoProps> = ({logoSrc}: LogoProps) => {
     return (

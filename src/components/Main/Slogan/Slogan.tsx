@@ -1,10 +1,6 @@
 import * as React from "react";
 import "./Slogan.scss";
-
-export interface SloganProps {
-    title: string;
-    header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-}
+import {SloganProps} from './Slogan.interface.ts'
 
 export const Slogan: React.FC<SloganProps> = ({ title, header }) => {
     return (

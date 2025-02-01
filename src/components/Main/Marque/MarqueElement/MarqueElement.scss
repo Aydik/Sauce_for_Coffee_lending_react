@@ -1,7 +1,7 @@
 .marque-element{
   &_text {
     display: inline-block;
-    font-size: var(--running-line-text-size);
+    font-size: var(--marque-font-size);
     margin-right: 29px;
     white-space: nowrap;
   }

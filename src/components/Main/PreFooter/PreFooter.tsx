@@ -9,9 +9,9 @@ export const PreFooter: React.FC = () => {
             <Marque isBordered={true}/>
             <div className="pre-footer_content bordered">
                 <img className="background"
-                     src="assets/images/vector/big_fire.svg" alt=""/>
+                     src="/assets/images/vector/big_fire.svg" alt=""/>
                 <img className="frame svg-dark"
-                     src="assets/images/vector/bottom_frame.svg" alt=""/>
+                     src="/assets/images/vector/bottom_frame.svg" alt=""/>
                 <ForeignText/>
             </div>
         </div>

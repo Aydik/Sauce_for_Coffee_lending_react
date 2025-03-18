@@ -15,7 +15,7 @@ export const HeaderDesktop: React.FC = () => {
                         <NavLink title={"Shop"} href={"#shop"}/>
                     </li>
                     <li>
-                        <Logo logoSrc={"assets/images/vector/logo.svg"}/>
+                        <Logo logoSrc={"/assets/images/vector/logo.svg"}/>
                     </li>
                     <li className="flex">
                         <NavLink title={"Contact"} href={"#contact"}/>

@@ -28,7 +28,7 @@
       &:checked {
         & + .button-menu {
           img {
-            content: url("@/assets/images/vector/close.svg");
+            content: url("src/assets/images/vector/close.svg");
           }
         }
         & ~ .header_ul-container {

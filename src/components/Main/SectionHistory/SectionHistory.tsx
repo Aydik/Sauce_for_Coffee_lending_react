@@ -10,13 +10,13 @@ export const SectionHistory: React.FC = () => {
             <div className="section-history_block">
                 <Slogan title={"the story behind the sauce"} header={"h3"}/>
                 <Banner srcSet={{
-                    large:"/assets/images/large/syrup_creator_large.jpg",
-                    medium:"/assets/images/large/syrup_creator_large.jpg",
-                    small:"/assets/images/medium/syrup_creator_medium.jpg",
+                    large:"src/assets/images/large/syrup_creator_large.jpg",
+                    medium:"src/assets/images/large/syrup_creator_large.jpg",
+                    small:"src/assets/images/medium/syrup_creator_medium.jpg",
                 }} alt={"syrup creator"} withPadding={false}/>
             </div>
             <div className="section-history_block">
-                <img className="background-for-text" src="/assets/images/vector/background_for_text.svg"
+                <img className="background-for-text" src="src/assets/images/vector/background_for_text.svg"
                      alt=""/>
                 <HistoryText/>
             </div>

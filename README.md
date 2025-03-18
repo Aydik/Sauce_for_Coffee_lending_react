@@ -24,7 +24,7 @@ Sauce for Coffee — это адаптивный лендинг, разрабо�
 
 Проект доступен по ссылке: [GitHub Pages](https://Aydik.github.io/Sauce_for_Coffee_lending_react/)
 
-![Скриншот](.//assets/screenshot.png)
+![Скриншот](./assets/screenshot.png)
 
 ## Установка и запуск
 

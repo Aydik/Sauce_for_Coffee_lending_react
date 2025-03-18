@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# Sauce for Coffee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Учебный проект - лендинг, созданный с использованием React и TypeScript.
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sauce for Coffee — это адаптивный лендинг, разработанный по макету из Figma. Проект создан для изучения React и
+организации кода с применением методологии БЭМ.
 
-## Expanding the ESLint configuration
+### Основные особенности:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Полностью резиновая и адаптивная верстка
+- Интерактивное бургер-меню для мобильных устройств
+- Чистая и структурированная кодовая база
 
-- Configure the top-level `parserOptions` property like this:
+## Технологии
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React + Vite — Быстрая разработка и удобная структура
+- TypeScript — Строгая типизация для надежного кода
+- SCSS — Гибкость в стилизации
+- БЭМ — Методология для организации CSS
+
+## Развертывание
+
+Проект доступен по ссылке: [GitHub Pages](https://Aydik.github.io/Sauce_for_Coffee_lending_react/)
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+
+```sh
+   git clone https://github.com/Aydik/Sauce_for_Coffee_lending_react.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Перейдите в папку проекта:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+   cd Sauce_for_Coffee_lending_react
 ```
+
+3. Установите зависимости:
+
+```sh
+    npm install
+```
+
+4. Запустите локальный сервер:
+
+```sh
+  npm run dev
+```
+
+## Контакты
+
+Автор: Айдаров Кирилл Вячеславович
+Email: nekkisuper@gmail.com

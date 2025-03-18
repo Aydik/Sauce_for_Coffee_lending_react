@@ -9,11 +9,11 @@ export const HeaderMobile: React.FC = () => {
             <nav className="nav header_nav bordered flex">
                 <input type="checkbox" id="menu-toggle"/>
                 <label htmlFor="menu-toggle" className="button button-primary button-menu">
-                    <img className="img" src="src/assets/images/vector/menu.svg" alt=""/></label>
+                    <img className="img" src="/assets/images/vector/menu.svg" alt=""/></label>
                 <HeaderNavListMobile/>
-                <Logo logoSrc={"src/assets/images/vector/logo_mobile.svg"}/>
+                <Logo logoSrc={"/assets/images/vector/logo_mobile.svg"}/>
                 <button className="button button-primary button-primary-users">
-                    <img src="src/assets/images/vector/users.svg" alt=""/>
+                    <img src="/assets/images/vector/users.svg" alt=""/>
                 </button>
             </nav>
         </header>

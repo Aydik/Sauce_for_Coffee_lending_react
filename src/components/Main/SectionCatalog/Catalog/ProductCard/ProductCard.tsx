@@ -8,7 +8,7 @@ export const ProductCard: React.FC<ProductCardProps> = (props: ProductCardProps)
         <div className="product-card">
             <div className="background">
                 <img className="background-image"
-                     src="src/assets/images/vector/product_card_background.png" alt=""/>
+                     src="/assets/images/vector/product_card_background.png" alt=""/>
             </div>
             <div className="product">
                 <p className="product-info">{info}</p>

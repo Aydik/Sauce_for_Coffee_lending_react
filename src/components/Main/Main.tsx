@@ -17,9 +17,9 @@ export const Main: React.FC = () => {
                 <SectionCatalog/>
                 <Marque isBordered={true}/>
                 <Banner srcSet={{
-                    large:"src/assets/images/large/syrup_in_cup_large.jpg",
-                    medium:"src/assets/images/medium/syrup_in_cup_medium.jpg",
-                    small:"src/assets/images/small/syrup_in_cup_small.jpg"
+                    large:"/assets/images/large/syrup_in_cup_large.jpg",
+                    medium:"/assets/images/medium/syrup_in_cup_medium.jpg",
+                    small:"/assets/images/small/syrup_in_cup_small.jpg"
                 }} alt={"syrup in cup"} isBordered={true}/>
                 <SectionHistory/>
                 <PreFooter/>

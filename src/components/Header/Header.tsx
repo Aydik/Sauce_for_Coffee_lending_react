@@ -1,22 +1,12 @@
-import {Logo} from "./Logo/Logo.tsx";
-import {useState} from "react";
+import {HeaderDesktop} from './HeaderDesktop/HeaderDesktop.tsx'
+import {HeaderMobile} from './HeaderMobile/HeaderMobile.tsx'
+import * as React from "react";
 
-export const Header = () => {
-    const [isShowLogo, setShowLogo] = useState(true);
-
+export const Header: React.FC = () => {
     return (
-        <header>
-            <button onClick={() => setShowLogo(!isShowLogo)}>
-                { !isShowLogo ? 'Показать лого' : 'Скрыть лого' }
-            </button>
-
-            <Logo isShowLogo={isShowLogo} />
-
-            <nav>
-                <a href="">Домой</a>
-                <a href="">Каталог</a>
-                <a href="">О компании</a>
-            </nav>
-        </header>
+        <>
+            <HeaderDesktop/>
+            <HeaderMobile/>
+        </>
     )
 }

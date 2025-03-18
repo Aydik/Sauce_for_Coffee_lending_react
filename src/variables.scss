@@ -1,0 +1,46 @@
+:root {
+  --primary-background-color: #FB4B4D;
+  --secondary-color: #CDFD3B;
+  --nav-text-color: #222222;
+  --default-border: 1px solid black;
+  --default-padding: 20px;
+  --default-background: white;
+  --container-margin: 20px;
+  --slogan-with-scorpions-padding: clamp(32px, calc(32px + 27 * (100vw - 1024px) / 416), 60px) 29px;
+  --scorpion-width: clamp(70px, calc(180px + 55 * (100vw - 1024px) / 416), 225px);
+  --fontFamily: "Roboto", sans-serif;
+  --header-font-size: 14px;
+  --footer-font-size: 15px;
+  --marque-font-size: 17px;
+  --h1-font-size: clamp(30px, calc(45px + 11 * (100vw - 1024px) / 416), 58px);
+  --h2-font-size: clamp(30px, calc(45px + 10 * (100vw - 1024px) / 416), 65px);
+  --h3-font-size: clamp(24px, calc(32px + 26 * (100vw - 1024px) / 416), 58px);
+  --history-font-size: clamp(6px, calc(12px + 3 * (100vw - 840px) / 416), 26px);
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --container-margin: 5px;
+    --default-padding: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  :root {
+    --slogan-with-scorpions-padding: 32px 12px;
+    --scorpion-width: clamp(30px, calc(70px + 60 * (100vw - 414px) / 610), 125px);
+    --h1-font-size: clamp(18px, calc(30px + 30 * (100vw - 414px) / 610), 48px);
+    --h2-font-size: clamp(16px, calc(24px + 31 * (100vw - 414px) / 610), 65px);
+    --h3-font-size: clamp(12px, calc(24px + 24 * (100vw - 414px) / 610), 48px);
+    --history-font-size: clamp(8px, calc(12px + 16 * (100vw - 414px) / 610), 30px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --milk-color: #faffe8;
+    --default-background: #272727;
+    --default-border: 1px solid white;
+    --nav-text-color: var(--milk-color);
+  }
+}

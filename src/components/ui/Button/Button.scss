@@ -1,0 +1,13 @@
+.button {
+  border: none;
+  text-transform: uppercase;
+
+  &-primary {
+    background: var(--primary-background-color);
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

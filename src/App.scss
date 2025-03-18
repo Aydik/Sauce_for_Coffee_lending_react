@@ -1,0 +1,79 @@
+@use "variables";
+@use "normalize";
+
+$fontFamily: var(--fontFamily);
+
+body {
+  font-family: $fontFamily;
+  text-transform: uppercase;
+  background: var(--default-background);
+}
+
+.container {
+  max-width: calc(1920px - 2 * var(--container-margin));
+  margin: 0 auto;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    margin: 0 var(--container-margin) var(--container-margin) var(--container-margin);
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.bordered {
+  border-bottom: var(--default-border);
+}
+
+@media (min-width: 960px) {
+  .bordered {
+    border-right: var(--default-border);
+    border-left: var(--default-border);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.scaleX {
+  transform: scale(-1, 1);
+}
+
+img{
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--milk-color);
+  }
+  .product-card p{
+    color: black;
+  }
+  .nav-link-text{
+    color: var(--milk-color);
+  }
+  .svg-dark,
+  .header-mobile .logo img {
+    filter: invert(92%);
+  }
+  .header-desktop .logo img {
+    content: url("@/assets/images/vector/dark/logo_dark.svg");
+  }
+  .ujjo {
+    content: url("@/assets/images/vector/dark/ujjo_dark.svg");
+  }
+  .background-image {
+    content: url("@/assets/images/vector/dark/product_card_background_dark.png");
+  }
+  .background-for-text {
+    content: url("@/assets/images/vector/dark/background_for_text_dark.svg");
+  }
+}

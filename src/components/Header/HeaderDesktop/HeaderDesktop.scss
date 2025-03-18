@@ -1,0 +1,50 @@
+@use "../Header";
+
+.header-desktop {
+  background: var(--default-background);
+
+  .header_ul {
+    margin: 20px 0;
+    padding: 0 2%;
+    justify-content: space-between;
+
+    li {
+      &:first-child, &:last-child {
+        flex-basis: calc(50% - 100px);
+        justify-content: space-between;
+      }
+
+      &:first-child {
+        padding-right: 0.7%;
+      }
+
+      &:last-child {
+        padding-left: 0.7%;
+      }
+
+      &:nth-child(2) {
+        flex-basis: 200px;
+      }
+    }
+  }
+
+  .button {
+    height: 52px;
+    width: auto;
+    padding: 0 8.8%;
+  }
+
+  .nav-link {
+    height: 52px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 959px) {
+  .header-desktop {
+    display: none;
+  }
+}

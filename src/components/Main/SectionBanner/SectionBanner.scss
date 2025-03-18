@@ -1,0 +1,44 @@
+.section-banner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: content-box;
+
+  &_block {
+    &:first-child {
+      border-right: var(--default-border);
+
+      .marque {
+        border-top: var(--default-border);
+        border-bottom: var(--default-border);
+      }
+    }
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      h1 {
+        font-size: var(--h1-font-size);
+        font-weight: normal;
+        text-align: center;
+        max-width: 536px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .section-banner {
+    display: block;
+
+    .section-banner_component:first-child {
+      border-right: 0;
+
+      .banner {
+        border-bottom: var(--default-border);
+      }
+    }
+  }
+}

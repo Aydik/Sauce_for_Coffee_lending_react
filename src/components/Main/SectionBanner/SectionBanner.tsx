@@ -12,17 +12,17 @@ export const SectionBanner: React.FC = () => {
                 <ForeignText/>
                 <Marque/>
                 <Banner srcSet={{
-                    large:"/assets/images/large/syrup_around_cups_large.jpg",
-                    medium:"/assets/images/medium/syrup_around_cups_medium.jpg",
-                    small:"/assets/images/small/syrup_around_cups_small.jpg"
+                    large:"assets/images/large/syrup_around_cups_large.jpg",
+                    medium:"assets/images/medium/syrup_around_cups_medium.jpg",
+                    small:"assets/images/small/syrup_around_cups_small.jpg"
                 }} alt={"syrup around cups small"}/>
             </div>
             <div className="section-banner_block">
                 <Slogan title={"THE FIRST HOT SAUCE MADE FOR COFFEE"} header={"h1"}/>
                 <Banner srcSet={{
-                    large:"/assets/images/large/syrup_in_hand_large.jpg",
-                    medium:"/assets/images/medium/syrup_in_hand_medium.jpg",
-                    small:"/assets/images/small/syrup_in_hand_small.jpg"
+                    large:"assets/images/large/syrup_in_hand_large.jpg",
+                    medium:"assets/images/medium/syrup_in_hand_medium.jpg",
+                    small:"assets/images/small/syrup_in_hand_small.jpg"
                 }} alt={"syrup in hand"}/>
             </div>
         </section>
